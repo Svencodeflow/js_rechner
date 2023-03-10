@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" onsubmit="return false">
+        <H1>Märchensteuer</H1>
+        <fieldset class="rechner">
+            <legend>Rechner</legend>
+            <label for="">Was soll berechnet werden?</label>
+            <div>
+                <input type="radio" name="subject" value="0" id="checknb" required>Netto zu Brutto
+                <input type="radio" name="subject" value="1" id="checknb" required>Brutto zu Netto
+            </div>
+            <label for="">Märchensteuer</label>
+            <div>
+                <input type="radio" name="subject2" value="0" id="checkprozent" required>19%
+                <input type="radio" name="subject2" value="1" id="checkprozent" required>7%
+            </div>
+            <label for="" id="netto_brutto">placeholder</label> <!-- Text ändern Netto: Nettobetrag in Euro || Brutto: Bruttobetrag in Euro-->
+            <input type="number" name="euro" id="euro" required>
+            <button type="berechnen" onclick="calculate()">Berechnen</button>
+        </fieldset>
+        <fieldset class="ergebniss">
+            <legend>Ergebnis</legend>
+            <label for="">Mehrwertsteuerbetrag</label>
+            <p id="differenz">Placeholder</p>
+            <label for="" id="nbtext">Placeholder</label>
+            <p id="aktuell">Placeholder</p>
+        </fieldset>
+    </form>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
